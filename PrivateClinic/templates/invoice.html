@@ -1,0 +1,81 @@
+{% extends 'layout/base_main.html' %}
+{% block content %}
+<main id="main" class="main">
+    <div id="invoice">
+        <div class="toolbar hidden-print">
+            <div class="text-right">
+                <button id="printInvoice" class="btn btn-info"><i class="fa fa-print"></i> Print</button>
+                <button class="btn btn-info"><i class="fa fa-file-pdf-o"></i> Export as PDF</button>
+            </div>
+            <div id="invoice">
+                <div class="toolbar hidden-print">
+                    <hr>
+                </div>
+                <div class="invoice overflow-auto">
+                    <div style="min-width: 500px">
+                        <header>
+                            <div class="row">
+                                <div class="col">
+                        </header>
+                        <main>
+                            <div class="row contacts">
+                                <div class="col invoice-to">
+                                    <div class="text-gray-light">Bệnh Nhân</div>
+                                    <h2 class="to">Nguyễn Vân Anh</h2>
+                                    <div class="address">Nhơn Đức,Huyện Nhà bè, Thành phố Hồ Chí Minh</div>
+                                    <div class="email"><a href="#">nguyenvananh2341@gmai.com</a></div>
+                                </div>
+                                <div class="col invoice-details">
+                                    <h1 class="invoice-id">Hóa đơn</h1>
+                                    <div class="date">Ngày thanh toán: 01/01/2024</div>
+
+                                </div>
+                            </div>
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                <tr>
+                                    <th>Mã hóa đơn</th>
+                                    <th class="text-left">Tên bệnh nhân</th>
+                                    <th class="text-right">Ngày khám</th>
+                                    <th class="text-right">Tiền khám</th>
+                                    <th class="text-right">Tiền thuốc</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="no">1</td>
+                                    <td class="text-left"><h3>
+
+                                        Nguyễn Vân Anh
+
+                                    </h3>
+
+                                    </td>
+                                    <td class="unit">2024-03-04</td>
+                                    <td class="qty">100.000 VND</td>
+                                    <td class="total">200.000 VND</td>
+                                </tr>
+
+                                </tbody>
+                                <tfoot>
+
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td colspan="2">Tổng tiền</td>
+                                    <td>300.000 VND</td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </main>
+                        <footer>
+                            Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi.
+                        </footer>
+                    </div>
+                    <!--DO NOT DELETE THIS div. IT is responsible for showing footer always at the bottom-->
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
